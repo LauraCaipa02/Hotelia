@@ -10,14 +10,14 @@ const GridImages = () => {
       thumbnail: "./assets/images/grid/1.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
-      caption: "Myrland, Nordland, Norway"
+      caption: "habitacion tipo"
   },
   {
       src: "./assets/images/grid/2.jpg",
       thumbnail: "./assets/images/grid/2.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
-      caption: "Sodankylä, Finland"
+      caption: "habitacion tipo"
   },
 
   {
@@ -25,21 +25,21 @@ const GridImages = () => {
       thumbnail: "./assets/images/grid/3.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
-      caption: "Iceland"
+      caption: "habitacion tipo"
   }, 
   {
       src: "./assets/images/grid/4.jpg",
       thumbnail: "./assets/images/grid/4.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
-      caption: "Algeria"
+      caption: "habitacion tipo"
   },
   {
       src: "./assets/images/grid/5.jpg",
       thumbnail: "./assets/images/grid/5.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
-      caption: "Scotland, United Kingdom"
+      caption: "habitacion tipo"
   },
 
   {
@@ -47,7 +47,7 @@ const GridImages = () => {
       thumbnail: "./assets/images/grid/6.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
-      caption: "Santa Cristina Valgardena, Trentino-Alto Adige, Italia"
+      caption: "habitacion tipo"
   }, 
 
   {
@@ -55,7 +55,7 @@ const GridImages = () => {
     thumbnail: "./assets/images/grid/7.jpg",
     thumbnailWidth: 320,
     thumbnailHeight: 174,
-    caption: "Maldives"
+    caption: "habitacion tipo"
   }, 
 
   {
@@ -63,13 +63,13 @@ const GridImages = () => {
     thumbnail: "./assets/images/grid/8.jpg",
     thumbnailWidth: 320,
     thumbnailHeight: 174,
-    caption: "Braies, Trentino-Alto Adige, Italy"
+    caption: "habitacion tipo"
   }, 
 ]
 
   return (
     <div className='gridImages'>
-        <h2 className='gridImagesTitle'>Get inspiration for your next trip</h2>
+        <h2 className='gridImagesTitle'>Nuestros servicios</h2>
         <Gallery images={IMAGES} />
     </div>
   )

@@ -10,7 +10,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import './header.css'
 import { SearchContext } from '../../context/SearchContext'
 import { AuthContext } from '../../context/AuthContext'
-import Image from '../../image.png';
+import Logo from '../../logo2.png';
 
 const Header = ({ type }) => {
 
@@ -60,7 +60,7 @@ const Header = ({ type }) => {
         <div className='h-container'>
             <div className="h-row">
                 <div className="h-col">
-                    <Link to="/">Hotelia</Link>
+                    <Link to="/"><img src={Logo} /></Link>
                 </div>
                 <div className="h-col">
                     {user ?
@@ -84,21 +84,22 @@ const Header = ({ type }) => {
             <div className="h-row">
                 <div className={type === "smallHeader" ? "h-col smallHeader" : "h-col"}>
                     <div className="icons">
+                        <div className="icon">
+                            <Link to='/'>Inicio</Link>
+                        </div>
                         <div className="icon active">
                             <FontAwesomeIcon icon={faBed} />
                             <Link to='/'>Habitaciones</Link>
                         </div>
+
                         <div className="icon">
-                            <Link to='/'>Inicio</Link>
+                            <Link to='/'>Servicios</Link>
                         </div>
                         <div className="icon">
-                            <Link to='/'>Reserva</Link>
+                            <Link to='/'>Contacto</Link>
                         </div>
                         <div className="icon">
                             <Link to='/'>Eventos</Link>
-                        </div>
-                        <div className="icon">
-                            <Link to='/'>Sobre nosotros</Link>
                         </div>
                     </div>
                 </div>
@@ -167,7 +168,9 @@ const Header = ({ type }) => {
                                     <button className='btnSearch' onClick={handleSearch}>Buscar</button>
                                 </div>
                             </div>
+
                         </div>
+
                     </>
                 }
             </div>
